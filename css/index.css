@@ -273,6 +273,7 @@ footer {
   padding: 1.5% 1%;
   border-radius: 4px;
   color: white;
+  -webkit-transition: background-color 1000ms, color 1000ms linear;
   cursor: pointer;
 }
 .home .walk .walk-text .btn:hover {
