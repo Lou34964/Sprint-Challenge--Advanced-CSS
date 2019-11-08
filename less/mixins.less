@@ -1,1 +1,53 @@
 // Mixins Here
+.DisplayMe(@disp, @dirc, @just, @align){
+    display: @disp;
+    flex-direction: @dirc;
+    justify-content: @just;
+    align-items: @align;
+}
+.RemoveTextDec()
+{
+    text-decoration: none;
+    a{
+        text-decoration: none;
+    }
+    li{
+        text-decoration: none;
+    }
+    p{
+        text-decoration: none;
+    };
+}
+.RemoveMe{
+    display: none;
+}
+.BtnStyles()
+{
+    background-color:rgb(19, 19, 59);
+    width: 8rem;
+    font-size:1.4rem;
+    text-align: center;
+    padding: 1.5% 1%;
+    border-radius: 4px;
+    color:white;
+    -webkit-transition: background-color 1000ms, color 1000ms linear;
+    cursor: pointer;
+    &:hover{
+        // background-color: white;
+        // color:rgb(19, 19, 59);
+        // font-weight: bold;
+        .backgroundAnimation();
+    }
+    
+    @media @phone{
+        width: 97%;
+        padding:3%;
+        margin:0;
+    }
+}
+.backgroundAnimation(){
+    background-color: white;
+    color: rgb(19, 19, 59);
+    -webkit-transition: background-color 1000ms, color 1000ms linear;
+    
+}
